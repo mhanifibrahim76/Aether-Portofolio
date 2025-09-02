@@ -1,10 +1,5 @@
 import Image from "next/image";
-import { RefObject } from 'react';
 import { forwardRef } from "react";
-
-interface SectionProps {
-  refProp: RefObject<HTMLElement>;
-}
 
 const Footer = forwardRef<HTMLDivElement>((props, ref) => {
   return (
@@ -68,24 +63,24 @@ const Footer = forwardRef<HTMLDivElement>((props, ref) => {
             <h3 className="font-semibold mb-4">Follow Us</h3>
             <div className="flex gap-4">
               <a href="#" aria-label="Instagram">
-                <img
+                <Image
                   src="/icon/footerInstagram.png"
                   alt="Instagram"
                   className="w-6 h-6"
                 />
               </a>
               <a href="#" aria-label="TikTok">
-                <img src="/icon/footerTiktok.png" alt="TikTok" className="w-6 h-6" />
+                <Image src="/icon/footerTiktok.png" alt="TikTok" className="w-6 h-6" />
               </a>
               <a href="#" aria-label="LinkedIn">
-                <img
+                <Image
                   src="/icon/footerLinkedin.png"
                   alt="LinkedIn"
                   className="w-6 h-6"
                 />
               </a>
               <a href="#" aria-label="YouTube">
-                <img
+                <Image
                   src="/icon/footerYoutube.png"
                   alt="YouTube"
                   className="w-6 h-6"
