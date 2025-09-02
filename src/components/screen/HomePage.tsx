@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { RefObject } from 'react';
 import { forwardRef } from "react";
 
 const HomePage = forwardRef<HTMLDivElement>((props, ref) => {
@@ -32,5 +31,7 @@ const HomePage = forwardRef<HTMLDivElement>((props, ref) => {
     </div>
   );
 });
+
+HomePage.displayName = "HomePage";
 
 export default HomePage;

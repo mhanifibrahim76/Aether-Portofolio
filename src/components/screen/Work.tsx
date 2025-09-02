@@ -49,4 +49,6 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
   );
 });
 
+Work.displayName = "Work";
+
 export default Work;

@@ -100,4 +100,7 @@ const Footer = forwardRef<HTMLDivElement>((props, ref) => {
     </footer>
   );
 })
+
+Footer.displayName = "Footer";
+
 export default Footer;
